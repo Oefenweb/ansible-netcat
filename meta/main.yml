@@ -1,0 +1,23 @@
+# meta file for netcat
+---
+galaxy_info:
+  author: Mischa ter Smitten
+  company: Oefenweb.nl B.V.
+  description: Set up netcat in Debian-like systems
+  license: MIT
+  min_ansible_version: 1.4
+  platforms:
+    - name: Ubuntu
+      versions:
+        - lucid
+        - precise
+        - trusty
+    - name: Debian
+      versions:
+        - squeeze
+        - wheezy
+        - jessie
+  categories:
+    - system
+    - web
+dependencies: []
