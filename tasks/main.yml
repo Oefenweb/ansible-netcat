@@ -1,0 +1,23 @@
+# tasks file for netcat
+---
+- name: install
+  apt:
+    name: "{{ item }}"
+    state: latest
+    update_cache: true
+    cache_valid_time: 3600
+  with_items: netcat_dependencies
+  tags:
+    - configuration
+    - netcat
+    - netcat-install
+    - netcat-install-dependencies
+
+- name: update alternatives
+  alternatives:
+    name: nc
+    path: /bin/nc.traditional
+  tags:
+    - configuration
+    - netcat
+    - netcat-update-alternatives

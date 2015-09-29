@@ -1,0 +1,4 @@
+# vars file for netcat
+---
+netcat_dependencies:
+  - netcat-traditional
