@@ -19,5 +19,6 @@ galaxy_info:
         - jessie
   categories:
     - system
+    - networking
     - web
 dependencies: []
