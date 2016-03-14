@@ -44,7 +44,7 @@ before_install:
   - sudo apt-get update -qq
 
   # Remove mlocate
-  - sudo apt-get remove --purge netcat-traditional
+  - sudo apt-get remove --purge --yes netcat-traditional
 
 install:
   # Install Ansible.
