@@ -40,6 +40,13 @@ branches:
   only:
     - master
 
+matrix:
+  allow_failures:
+    # See https://github.com/ansible/ansible/pull/7470
+    - env: ANSIBLE_VERSION=1.6.2
+    - env: ANSIBLE_VERSION=1.6.1
+    - env: ANSIBLE_VERSION=1.6
+
 before_install:
   - sudo apt-get update -qq
 
