@@ -3,10 +3,10 @@
 - name: install
   apt:
     name: "{{ item }}"
-    state: latest
+    state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
-  with_items: netcat_dependencies
+  with_items: "{{ netcat_dependencies }}"
   tags:
     - configuration
     - netcat
