@@ -1,6 +1,7 @@
-# meta file for netcat
+# meta file
 ---
 galaxy_info:
+  namespace: oefenweb
   role_name: netcat
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
