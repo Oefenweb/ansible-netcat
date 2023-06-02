@@ -1,7 +1,7 @@
 # tasks file
 ---
 - name: install
-  apt:
+  ansible.builtin.apt:
     name: "{{ netcat_dependencies }}"
     state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
@@ -13,7 +13,7 @@
     - netcat-install-dependencies
 
 - name: update alternatives
-  alternatives:
+  community.general.alternatives:
     name: nc
     path: /bin/nc.traditional
   tags:
