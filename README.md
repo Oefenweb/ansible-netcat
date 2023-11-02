@@ -23,7 +23,7 @@ None
 ---
 - hosts: all
   roles:
-    - netcat
+    - oefenweb.netcat
 ```
 
 #### License
